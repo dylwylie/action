@@ -78,6 +78,11 @@ jobs:
       - name : machine ls $HOME
         working-directory : "."
         run : "ls -la $HOME"
+      - name : pwd
+        run: "pwd"
+      - name : pwd - uses
+        uses: ./
+        run: "pwd"
       - name: Push
         id: push
         uses: ./
