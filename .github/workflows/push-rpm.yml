@@ -80,6 +80,8 @@ jobs:
         run : "ls -la $HOME"
       - name : pwd
         run: "pwd"
+      - name : ls-file
+        run: "ls -lha test/fixture/cloudsmith-rpm-example-1.0-1.x86_64.rpm"
       - name: Push
         id: push
         uses: ./
